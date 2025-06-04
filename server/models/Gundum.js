@@ -3,26 +3,22 @@ const getId = require("../utils/getId");
 const gundumx = [
   {
     name: "Gundum Barbatos",
-    anime: "Mobile Suit Gundum: Iron-Blooded Orphans",
     id: getId(),
   },
   {
     name: "Strike Freedom",
-    anime: "Mobile Suit Gundum: SEED Destiny",
     id: getId(),
   },
   {
     name: "Gundum Banshee",
-    anime: "Mobile Suit Gundum: Unicorn",
     id: getId(),
   },
 ];
 
 class Gundum {
-  static create(name, anime) {
+  static create(name) {
     const newGundum = {
       name,
-      anime,
       id: getId(),
     };
     gundumx.push(newGundum);
